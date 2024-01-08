@@ -1,0 +1,299 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+}
+
+.body {
+    padding: 50px;
+    width: 80%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    justify-content: baseline;
+    align-items: baseline;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3vw;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+}
+
+.top {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+
+.left {
+    width: 70%;
+}
+
+.bgimg {
+    width: 100%;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 1%;
+    padding: 20px;
+}
+
+#menu,
+#close {
+    display: none;
+}
+
+.card {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3vw;
+}
+
+.card h4 {
+    font-size: 1.5vw;
+}
+
+.card img {
+    height: 100px;
+}
+
+.num {
+    font-size: 2.1vw;
+    color: rgb(172, 172, 172);
+}
+
+.leftbottom {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.right {
+    width: 30%;
+    background-color: rgb(3, 3, 87);
+    color: white;
+    padding: 20px;
+    height: fit-content;
+}
+
+h1 {
+    font-size: 3.5vw;
+    width: 58%;
+
+}
+
+h2 {
+    font-size: 2vw;
+    margin-bottom: 10px;
+}
+
+.top h4 {
+    padding: 10px 0px;
+    font-size: 1.4vw;
+}
+
+.right p {
+    padding-bottom: 10px;
+    font-size: 1.2vw;
+}
+
+.mbg {
+    display: none;
+}
+
+.p {
+    padding: 20px;
+    text-align: justify;
+    width: 100%;
+    font-size: 1.4vw;
+}
+
+.p button {
+    padding: 10px;
+    background-color: orangered;
+    border: none;
+    color: white;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 44;
+        background-color: rgb(255, 255, 255);
+        height: 100vh;
+        right: 0%;
+        top: 0%;
+        padding-top: 160px;
+        transition: all .5s;
+        gap: 30px;
+        padding-left: 20px;
+    }
+
+    nav a {
+        color: rgb(0, 0, 0);
+        font-size: 7vw;
+        padding: 10px;
+    }
+
+    #menu,
+    #close {
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin-top: 5px;
+    }
+
+    nav {
+        margin: 0%;
+    }
+
+    .body {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .bgimg {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .mbg {
+        display: block;
+        width: 100%;
+    }
+
+    .top {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    body {
+        margin: 0%;
+    }
+
+    .leftbottom {
+        display: block;
+    }
+
+    h1 {
+        font-size: 12vw;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .p {
+        font-size: 4.7vw;
+        text-align: left;
+        padding: 0px 10px;
+    }
+
+    .p button {
+        width: 50%;
+        height: 42px;
+    }
+
+    .right {
+        width: 100%;
+        font-size: 4vw;
+    }
+
+    .top h4 {
+        font-size: 5vw;
+    }
+
+    .right p {
+        font-size: 4.5vw;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    .bottom {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .num {
+        font-size: 9vw;
+    }
+
+    .card h4 {
+        font-size: 5vw;
+    }
+
+    .card p {
+        font-size: 4.5vw;
+    }
+
+    .mad {
+        background-color: rgba(0, 0, 0, 0.71);
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0%;
+        right: 0%;
+    }
+
+    #close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    #nav {
+        width: 0%;
+        transition: ease-in 0.5s;
+    }
+
+    #mad {
+        display: none;
+        transition: ease-in 0.5s;
+    }
+}
